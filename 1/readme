@@ -1,5 +1,29 @@
 Instructions:
-Create a div using jQuery with style tag.
+// Create a div using jQuery with style tag.
 
-Expected return: 
-When a button is pressed, a new div should generate on the page. The div should contain some simple content (such as a sentence or small image) so that it can be easily seen.
+// Expected return: 
+// When a button is pressed, a new div should generate on the page. The div should contain some simple content (such as a sentence or small image) so that it can be easily seen.
+
+
+// $(document).ready(function(){
+//     $("button").click(function(){
+//       $("body").html("<div>This is a new div.</div>");
+//     });
+//   });
+
+function createDiv() {
+    $(document).ready(function () {
+      var test = {
+        id: "div",
+        class: "divclass",
+        css: {
+          "color": "Green"
+        }
+      };
+      var $div = $("<div>", test);
+      $div.html("New div tag created");
+      $("body").append($div);
+    });
+  }
+
+  

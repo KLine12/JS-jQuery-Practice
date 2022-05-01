@@ -1,5 +1,11 @@
-Instructions:
-Using jQuery, set the value of the input text field. 
+// Instructions:
+// Using jQuery, set the value of the input text field. 
 
-Expected return: 
-When the button is pressed, a string should populate inside of the text input field.
+// Expected return: 
+// When the button is pressed, a string should populate inside of the text input field.
+
+  $(document).ready(function () {
+            $('#buttonName').click(function () {
+                $('input[name="name"]').val('William');
+            });
+        });
